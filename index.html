@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petopia | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scripps.org%2Fnews_items%2F7021-how-are-pets-good-for-your-health&psig=AOvVaw2dGGoW04-3KqCUcE8a5t89&ust=1759797189853000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNDM77ypjpADFQAAAAAdAAAAABAE);
+      color: #333;
+    }
+    header {
+      background-color: #1e3a8a;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; color: white;
+    }
+    .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+    }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul li a {
+      color: white; text-decoration: none; font-weight: 600;
+    }
+    nav ul li a:hover { text-decoration: underline; }
+
+    .hero {
+      position: relative;
+      height: 90vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+    .hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+    .hero h1 { font-size: 3rem; color: #1e3a8a; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; color: #333; }
+    .btn {
+      background-color: #1e3a8a; color: white;
+      padding: 0.8rem 1.8rem; border-radius: 25px;
+      text-decoration: none; font-weight: bold;
+    }
+    .btn:hover { background-color: #0f172a; }
+
+    footer {
+      background-color: #1e3a8a; color: white;
+      text-align: center; padding: 1rem; margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Petopia</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="profile.html">Pet Profile</a></li>
+        <li><a href="care.html">Pet Care</a></li>
+      <li><a href="fun.html">Fun Facts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="maps.html">Maps</a></li>
+      <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section class="hero">
+       <video autoplay loop muted class="back-video">
+        <source src="image/background.mp4" type="video/mp4">
+       </video>
+    <div class="floating-emoji" style="top: 20%; left: 10%;">🐶</div>
+    <div class="floating-emoji" style="top: 40%; right: 15%; animation-delay: 1s;">🐱</div>
+    <div class="floating-emoji" style="top: 60%; left: 20%; animation-delay: 2s;">🐕‍🦺</div>
+    <div class="floating-emoji" style="top: 30%; right: 10%; animation-delay: 0.5s;">🐾</div>
+    <div class="floating-emoji" style="top: 50%; left: 15%; animation-delay: 1.5s;">🐈</div>
+    <h1>Welcome to Petopia</h1>
+    <p>Your favorite zone for everything about pets — love, care, and fun!</p>
+    <a href="profile.html" class="btn">Explore Pet Profiles</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Petopia | Designed by Afiq Nasrullah</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petopia | Pet Care Tips</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #dbeafe, #ffffff);
+    margin: 0; color: #333;
+  }
+  header { background: #1e3a8a; color: white; display: flex; justify-content: space-between; padding: 1rem 2rem; }
+  .logo { font-family: 'Pacifico', cursive; font-size: 1.8rem; }
+  nav ul { list-style: none; display: flex; gap: 1.5rem; }
+  nav ul li a { color: white; text-decoration: none; }
+  .container { text-align: center; padding: 3rem 2rem; }
+  h1 { color: #1e3a8a; margin-bottom: 2rem; }
+  .tips {
+    display: block;
+    overflow: visible;
+    animation: none;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .container {
+    animation: none;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  @keyframes marquee-vertical {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+  }
+  .tip-card {
+    background: white; border-radius: 15px; width: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 1rem; margin-bottom: 1rem;
+  }
+  .tip-card h3 { color: #1e3a8a; margin-bottom: 0.5rem; }
+  footer { background: #1e3a8a; color: white; text-align: center; padding: 1rem; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Petopia</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="profile.html">Pet Profile</a></li>
+        <li><a href="care.html">Pet Care</a></li>
+      <li><a href="fun.html">Fun Facts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="maps.html">Maps</a></li>
+      <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Pet Care Tips</h1>
+    <div class="tips">
+      <div class="tip-card"><h3>Dog Care</h3><p>Provide daily walks, balanced diet, and plenty of playtime.</p></div>
+      <div class="tip-card"><h3>Cat Care</h3><p>Keep litter box clean and give them cozy resting spots.</p></div>
+      <div class="tip-card"><h3>Rabbit Care</h3><p>Provide fresh hay, vegetables, and space to hop freely.</p></div>
+      <div class="tip-card"><h3>Bird Care</h3><p>Clean the cage often and offer toys for stimulation.</p></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Petopia | Designed by Afiq Nasrullah</p>
+  </footer>
+</body>
+</html>

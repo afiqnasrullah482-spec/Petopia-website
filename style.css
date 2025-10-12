@@ -1,0 +1,84 @@
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.7),
+               0 0 20px rgba(59, 130, 246, 0.5);
+  letter-spacing: 1px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.logo span {
+  font-size: 1.6rem;
+}
+
+/* glowing animation for logo */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.8),
+                 0 0 20px rgba(147, 197, 253, 0.6);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(37, 99, 235, 1),
+                 0 0 30px rgba(59, 130, 246, 0.9);
+  }
+}
+
+/* floating animation for emojis */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(5deg); }
+  50% { transform: translateY(-20px) rotate(0deg); }
+  75% { transform: translateY(-10px) rotate(-5deg); }
+}
+
+/* bounce animation for button */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.floating-emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+.btn:hover {
+  animation: bounce 1s;
+}
+
+nav ul li a:hover {
+  color: #dbeafe;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* New background image for hero section */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background-image: url('image/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+}
